@@ -11,17 +11,24 @@
   },
   "dependencies": {
     "react": "16.13.1",
-    "react-native": "0.63.2"
+    "react-native": "0.63.2",
+    "react-native-screens": "^2.10.1",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/runtime": "^7.8.4",
     "@react-native-community/eslint-config": "^1.1.0",
+    "@types/react": "^16.9.49",
+    "@types/react-native": "^0.63.18",
+    "@types/react-redux": "^7.1.9",
     "babel-jest": "^25.1.0",
     "eslint": "^6.5.1",
     "jest": "^25.1.0",
     "metro-react-native-babel-preset": "^0.59.0",
-    "react-test-renderer": "16.13.1"
+    "react-test-renderer": "16.13.1",
+    "redux-devtools-extension": "^2.13.8"
   },
   "jest": {
     "preset": "react-native"
