@@ -1,10 +1,9 @@
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Text, View } from 'react-native';
-// import { BaseNavigationContainer } from '@react-navigation/native';
-// import AppNavigator from './AppStackNavigator';
+import { BaseNavigationContainer } from '@react-navigation/native';
+import AppNavigator from './AppStackNavigator';
 import { AppState, KeyboardAvoidingView, Platform, StatusBar } from 'react-native';
-// import { navigationRef, saveCurrentRoute } from './Services/Navigation';
+import { navigationRef, saveCurrentRoute } from './Services/Navigation';
 import { changeAppStateAction } from './Store/Actions/appStatusActions';
 
 const AppContent: React.FunctionComponent = () => {
@@ -30,16 +29,13 @@ const AppContent: React.FunctionComponent = () => {
         style={{ flex: 1, marginTop: StatusBar.currentHeight }}
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
       >
-        <View>
-          <Text>Teste</Text>
-        </View>
-        {/*<BaseNavigationContainer
+        <BaseNavigationContainer
           ref={navigationRef}
           onStateChange={saveCurrentRoute}
           initialState={stackState ? JSON.parse(stackState) : null}
         >
           <AppNavigator />
-        </BaseNavigationContainer>*/}
+        </BaseNavigationContainer>
       </KeyboardAvoidingView>
     </>
   );
