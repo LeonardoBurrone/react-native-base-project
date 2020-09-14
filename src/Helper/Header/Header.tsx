@@ -1,6 +1,7 @@
 import { HeaderBackButton, HeaderTitle } from '@react-navigation/stack';
 import * as React from 'react';
 import { Platform, Text, TouchableOpacity, View } from 'react-native';
+
 import navigationService from '../../Services/Navigation';
 
 import { styles } from './Header.style';

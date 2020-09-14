@@ -1,5 +1,6 @@
-import * as React from 'react';
 import { CommonActions } from '@react-navigation/native';
+import * as React from 'react';
+
 import Store from '../Store';
 import { changeStackStateAction } from '../Store/Actions/appStatusActions';
 

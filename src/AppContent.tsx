@@ -1,8 +1,9 @@
-import * as React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import { BaseNavigationContainer } from '@react-navigation/native';
-import AppNavigator from './AppStackNavigator';
+import * as React from 'react';
 import { AppState, KeyboardAvoidingView, Platform, StatusBar } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
+
+import AppNavigator from './AppStackNavigator';
 import { navigationRef, saveCurrentRoute } from './Services/Navigation';
 import { changeAppStateAction } from './Store/Actions/appStatusActions';
 

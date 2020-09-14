@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { Provider as StoreProvider } from 'react-redux';
 import { enableScreens } from 'react-native-screens';
+import { Provider as StoreProvider } from 'react-redux';
 
-import Store from './Store';
 import AppContent from './AppContent';
+import Store from './Store';
 
 enableScreens();
 const App: React.FunctionComponent = () => (
